@@ -3,6 +3,7 @@
 The project is splitted in two folder:
 
 -app: React frontend app
+
 -server: nodeJs express server
 
 # Assumtions/issues found:
