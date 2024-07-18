@@ -4,7 +4,7 @@
 
 ## Configure the .env:
 
-Set the PORT variable to 8080 or any port other than 3000
+Set the PORT variable to 8080 or any port other than 3000. You can copy the .env_template to .env for testing
 
 ## Start the server
 
