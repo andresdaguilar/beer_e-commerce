@@ -1,12 +1,12 @@
 # beer_e-commerce
 
-The project is splitted in two folder:
+The project is splitted in two folders:
 
 -app: React frontend app
 
 -server: nodeJs express server
 
-# Assumtions/issues found:
+## Assumtions/issues found:
 
 * Image filename from the icons are not found in the products.js. 
 * The Lagunitas image is not in the folder
