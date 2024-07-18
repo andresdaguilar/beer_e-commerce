@@ -1,0 +1,248 @@
+.products-title{
+  font-size: 18px;
+  margin-bottom: 16px;
+  text-align: left;
+  margin: 0px 0px 20px 0px;
+}
+
+/* Grid layout for the products */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+/* Styling for each product card */
+.product-card {
+  border-radius: 12px 32px 12px 12px;
+  text-align: center;
+  position: relative;
+  height: 195px;
+  background-color: #FFFFFF;
+}
+
+/* Change border radius for odd elements (left column) */
+.product-card:nth-child(odd) {
+  border-radius: 12px 32px 12px 12px;
+}
+
+/* Change border radius for even elements (right column) */
+.product-card:nth-child(even) {
+  border-radius: 32px 12px 12px 12px;
+}
+
+/* Product title */
+.product-card h2 {
+  font-size: 16px;
+  margin: 16px 0 5px;
+  font-weight: 500;
+}
+
+/* Price styling */
+.product-card p {
+  font-size: 16px;
+  line-height: 16px;
+  color: #323232;
+  margin: 8px 14px;
+  font-weight: 500;
+  position: absolute;
+  bottom: 2px;
+}
+
+.product-card img {
+  height: 122px;
+  width: 122px;
+}
+/* Add button styling */
+.add-button {
+  background-color: #FF9F24;
+  color: white;
+  border: none;
+  border-radius: 8px 0px 8px 0px;
+  width: 40px;
+  height: 40px;
+  font-size: 32px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*******************/
+/* Product Details */
+/*******************/
+.product-page-details {
+  padding: 16px 16px 0px 16px;
+}
+
+.product-details img {
+  height: 240px;
+}
+
+.product-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product-detail-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #323232;
+
+}
+
+.product-brand-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+.product-brand {
+  font-weight: 700;
+  font-size: 24px;
+  color: #0F0D23;
+  display: flex;
+}
+
+.product-price {
+  color: #FF9F24;
+  font-size: 24px;
+  font-weight: 700;;
+}
+/* The product details card in the Figma file seems to be a bit overflow to the left */
+.product-details-card {
+  border-radius: 48px 48px 0px 0px;
+  background-color: #FFFFFF; 
+  padding: 35px 10px 0px 10px;
+}
+
+.product-origin {
+  display: flex;
+  color: #969696;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0px;
+}
+.product-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #969696;
+  text-align: left;
+}
+
+.product-description p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.83px;
+  color: #323232;
+
+}
+
+.read-more {
+  color: #FF9F24;
+  cursor: pointer;
+}
+
+.size-selector {
+  text-align: left;
+}
+
+.size-selector h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #323232;
+}
+
+.size-variants {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.size-option {
+  height: 31px;
+  border-radius: 15px;
+  border: 1px solid #969696;
+  margin: 5px;
+  padding: 5px 15px 5px 15px;
+  color: #969696;
+  text-decoration: none;;
+}
+
+.size-option.selected {
+  height: 31px;
+  border-radius: 15px;
+  border: 1px solid #FF9F24;
+  margin: 5px;
+  padding: 5px 15px 5px 15px;
+  color: #FF9F24;
+}
+
+.size-option p {
+  font-size: 14px;
+  font-weight: 400;    
+  line-height: 5px;
+}
+
+.product-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.product-add-to-bag {
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+  border: 1px solid #FF9F24;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.product-add-to-bag img {
+  width: 24px;
+  height: 24px;
+}
+
+.btn-primary {
+  width: 247px;
+  height: 54px;
+  border-radius: 12px;
+  background-color: #FF9F24;
+  color:#FFFFFF;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-nav {
+  height: 40px;
+  width: 40px;
+  border-radius: 12px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
